@@ -4,87 +4,121 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <script src="https://kit.fontawesome.com/21e74a8d8c.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     
   </head>
   <body>
-    <div class="card text-left">
+   <div class="container">
+    <div class="card text-left m-5">
   <div class="card-header">
-    Payment
+    <h1>Payment</h1>
   </div>
-   <div class="alert alert-danger" role="alert">
+   <div class="alert alert-danger m-3" role="alert">
       Some fields are missing
    </div>
 
   <div class="card-body">
-
-        <form>
+    <form>
         <div class="form-row">
             <div class="col-5">
-            <input type="text" class="form-control" placeholder="xxxxxxxxxxx">
+                <label for="xxxxxxxxxxx">Card Number</label>
+                <input type="text" class="form-control" placeholder="xxxxxxxxxxx">
             </div>
             <div class="col-3">
-            <input type="text-3" class="form-control" placeholder="00000000000">
+                <label for="00000000000">CVC</label>
+                <input type="text-3" class="form-control" placeholder="00000000000">
             </div>
-            <div class="col-3">
-            <input type="text" class="form-control" placeholder="Amount">
+            <div class="col-4">
+                <label for="Amount">Amount</label>
+                <input type="text" class="form-control" placeholder="Amount">
             </div>
         </div>
-        </form>
+    </form>
 
 
     <form class="needs-validation" novalidate>
-  <div class="form-row">
-    <div class="col-md-4 mb-3">
-      <label for="validationCustom01">First name</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" required>
+  <div class="form-row mt-3">
+    <div class="col">
+      <label for="validationCustom01">First Name</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="" value="" required>
       <!-- <div class="valid-feedback">
         Looks good!
       </div> -->
     </div>
-    <div class="col-md-4 mb-3">
-      <label for="validationCustom02">Last name</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" required>
+    <div class="col">
+      <label for="validationCustom02">Last Name</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="" value="" required>
       <div class="valid-feedback">
         Looks good!
       </div>
     </div>
   </div>
-  <div class="form-row">
-    <div class="col-md-4 mb-3">
+
+  <div class="form-row mt-3">
+    <div class="col-md-6 mb-3">
       <label for="validationCustom03">City</label>
-      <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="" required>
       <div class="invalid-feedback">
         Please provide a valid city.
       </div>
     </div>
     <div class="col-md-3 mb-3">
       <label for="validationCustom04">State</label>
-      <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="" required>
       <div class="invalid-feedback">
         Please provide a valid state.
       </div>
     </div>
     <div class="col-md-3 mb-3">
       <label for="validationCustom05">Zip</label>
-      <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+      <input type="text" class="form-control" id="validationCustom05" placeholder="" required>
       <div class="invalid-feedback">
         Please provide a valid zip.
       </div>
     </div>
   </div>
   <div class="form-group">
-    <div class="form-group">
-        <label for="exampleFormControlTextarea1">Example textarea</label>
+    <div class="form-group col-6 float-right">
+        <label for="exampleFormControlTextarea1">Comment</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
   </div>
 </form>
 
-<script>
+<form class="bg-secondary col-3">
+ <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+    <label class="form-check-label" for="inlineRadio1">
+        <i class="fab fa-cc-visa"></i>
+    </label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+    <label class="form-check-label" for="inlineRadio2">  
+        <i class="fab fa-cc-mastercard"></i>
+    </label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+    <label class="form-check-label" for="inlineRadio3">
+    <i class="fab fa-cc-amex"></i>
+    </label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+    <label class="form-check-label" for="inlineRadio3">
+    <i class="fab fa-cc-apple-pay"></i>
+    </label>
+  </div>
+</form>
+ 
+
+
+
+<!-- <script>
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
   'use strict';
@@ -103,16 +137,16 @@
     });
   }, false);
 })();
-</script>
+</script> -->
   </div>
 
 
   <div class="card-footer text-muted">
     <button class="btn btn-primary float-right" type="submit">Send</button>
-    <button class="btn btn-primary float-right" type="submit">Cancel</button>
+    <button type="button" class="btn btn-danger float-right mr-2">Cancel</button>
   </div>
 </div>
-
+</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
