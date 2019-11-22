@@ -10,7 +10,6 @@
     <title>Payment Form</title>
   </head>
 
-
   <body>
    <div class="container">
     <div class="card text-left m-5">
@@ -39,56 +38,51 @@
         </div>
     </form>
 
-
     <form class="needs-validation" novalidate>
-  <div class="form-row mt-3">
-    <div class="col">
-      <label for="validationCustom01">First Name</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="" value="" required>
-      <!-- <div class="valid-feedback">
-        Looks good!
-      </div> -->
-    </div>
-    <div class="col">
-      <label for="validationCustom02">Last Name</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="" value="" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-    </div>
-  </div>
-
-  <div class="form-row mt-3">
-    <div class="col-md-6 mb-3">
-      <label for="validationCustom03">City</label>
-      <input type="text" class="form-control" id="validationCustom03" placeholder="" required>
-      <div class="invalid-feedback">
-        Please provide a valid city.
-      </div>
-    </div>
-    <div class="col-md-3 mb-3">
-        <label for="exampleFormControlSelect1">Example select</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>Florida</option>
-      <option>California</option>
-      <option>New York</option>
-      <option>Louisiana</option>
-      <option>Illinois</option>
-    </select>
-      <div class="invalid-feedback">
-        Please provide a valid state.
-      </div>
-
-    </div>
-    <div class="col-md-3 mb-3">
-      <label for="validationCustom05">Zip</label>
-      <input type="text" class="form-control" id="validationCustom05" placeholder="" required>
-      <div class="invalid-feedback">
-        Please provide a valid zip.
-      </div>
-    </div>
-  </div>
-
+        <div class="form-row mt-3">
+           <div class="col">
+                <label for="validationtooltip01">First Name</label>
+                <input type="text" class="form-control" id="validationtooltip01" placeholder="First Name" value="Jordan" required>
+                <div class="valid-tooltip">
+                   Looks good!
+                </div>
+          </div>
+            <div class="col">
+                <label for="validationtooltip02">Last Name</label>
+                <input type="text" class="form-control" id="validationtooltip02" placeholder="Last Name" value="Aguiriano" required>
+                <div class="valid-tooltip">
+                    Looks good!
+                </div>
+            </div>
+        </div>
+        <div class="form-row mt-3">
+            <div class="col-md-6 mb-3">
+                <label for="validationtooltip03">City</label>
+                 <input type="text" class="form-control" id="validationtooltip03" placeholder="City" required>
+                <div class="invalid-tooltip">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Florida</option>
+                    <option>California</option>
+                    <option>New York</option>
+                    <option>Louisiana</option>
+                    <option>Illinois</option>
+                </select>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationtooltip05">Zip</label>
+                <input type="text" class="form-control" id="validationtooltip05" placeholder="" required>
+                <div class="invalid-tooltip">
+                    Please provide a valid zip.
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary float-right" type="submit">Submit</button>
+    </form>
 
 
   <div class="form-row p-2">
@@ -114,7 +108,6 @@
     <i class="fab fa-cc-amex"></i>
     </label>
   </div>
-
   <div class="form-check form-check-inline">
     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
     <label class="form-check-label" for="inlineRadio3">
@@ -122,27 +115,28 @@
     </label>
  </div>
     </div>
-        
-
 </div>
-
-
     <div class="form-group col-3">    
     </div>
     <div class="form-group col-6">
         <label for="exampleFormControlTextarea1">Comment</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-    
+    </div>  
   </div>
-</form>
+  </div>
 
-
- 
-
-
-
-<!-- <script>
+  <div class="card-footer text-muted">
+    <button class="btn btn-primary float-right" type="submit">Submit</button>
+    <button type="button" class="btn btn-danger float-right mr-2">Cancel</button>
+  </div>
+</div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
   'use strict';
@@ -161,19 +155,6 @@
     });
   }, false);
 })();
-</script> -->
-  </div>
-
-  <div class="card-footer text-muted">
-    <button class="btn btn-primary float-right" type="submit">Send</button>
-    <button type="button" class="btn btn-danger float-right mr-2">Cancel</button>
-  </div>
-</div>
-</div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</script>
   </body>
 </html>
